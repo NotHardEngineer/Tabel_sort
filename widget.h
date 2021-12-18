@@ -19,6 +19,7 @@ public:
 
 private slots:
     bool GetIntFromLineEdit(QLineEdit *line, int &value);
+    bool GetDoubleFromLineEdit(QLineEdit *line, double &value);
     bool GetDoubleFromItem(QTableWidgetItem *item, double &value);
 
     void on_rowCount_LineEdit_editingFinished();
@@ -27,6 +28,16 @@ private slots:
     void on_randomButton_clicked();
 
     void on_reorderButton_clicked();
+
+    void on_search_Button_clicked();
+
+    void on_maxButton_clicked();
+
+    void on_avgButton_clicked();
+
+    void on_minButton_clicked();
+
+    void on_deliteButton_clicked();
 
 private:
     Ui::Widget *ui;
